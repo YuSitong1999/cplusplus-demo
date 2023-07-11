@@ -29,3 +29,9 @@ add_executable(2.3.tail_type_inference
 
 add_executable(2.3.decltype_auto
         2.3/decltype_auto.cpp)
+
+add_executable(2.4.if_constexpr
+        2.4/if_constexpr.cpp)
+
+add_executable(2.4.for_range
+        2.4/for_range.cpp)

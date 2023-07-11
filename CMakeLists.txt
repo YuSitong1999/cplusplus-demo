@@ -17,3 +17,15 @@ add_executable(2.2.initializer_list
 
 add_executable(2.2.structured_binding
         2.2/structured_binding.cpp)
+
+add_executable(2.3.auto
+        2.3/auto.cpp)
+
+add_executable(2.3.decltype
+        2.3/decltype.cpp)
+
+add_executable(2.3.tail_type_inference
+        2.3/tail_type_inference.cpp)
+
+add_executable(2.3.decltype_auto
+        2.3/decltype_auto.cpp)

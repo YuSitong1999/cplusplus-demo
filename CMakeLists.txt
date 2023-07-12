@@ -50,3 +50,17 @@ add_executable(2.5.fold_expression
 
 add_executable(2.5.non-type_template_parameter_deduction
         2.5/non-type_template_parameter_deduction.cpp)
+
+add_executable(2.6.delegate_constructor
+        2.6/delegate_constructor.cpp)
+
+add_executable(2.6.inheritance_constructor
+        2.6/inheritance_constructor.cpp)
+
+add_executable(2.6.override_final 2.6/override_final.cpp)
+
+add_executable(2.6.delete_default
+        2.6/delete_default.cpp)
+
+add_executable(2.6.strongly_typed_enumerations
+        2.6/strongly_typed_enumerations.cpp)

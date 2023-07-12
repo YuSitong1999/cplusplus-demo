@@ -35,3 +35,18 @@ add_executable(2.4.if_constexpr
 
 add_executable(2.4.for_range
         2.4/for_range.cpp)
+
+add_executable(2.5.extern_templates
+        2.5/extern_templates.h 2.5/extern_templates.cpp 2.5/extern_templates_2.cpp)
+
+add_executable(2.5.type_alias_templates
+        2.5/type_alias_templates.cpp)
+
+add_executable(2.5.variadic_templates
+        2.5/variadic_templates.cpp)
+
+add_executable(2.5.fold_expression
+        2.5/fold_expression.cpp)
+
+add_executable(2.5.non-type_template_parameter_deduction
+        2.5/non-type_template_parameter_deduction.cpp)

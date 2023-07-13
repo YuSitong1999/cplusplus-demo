@@ -64,3 +64,21 @@ add_executable(2.6.delete_default
 
 add_executable(2.6.strongly_typed_enumerations
         2.6/strongly_typed_enumerations.cpp)
+
+add_executable(3.1.lambda 3.1/lambda.cpp)
+
+add_executable(3.1.generic_lambda
+        3.1/generic_lambda.cpp)
+
+add_executable(3.2.std_function
+        3.2/std_function.cpp)
+
+add_executable(3.2.bin_placeholder 3.2/bin_placeholder.cpp)
+
+add_executable(3.3.lvalue_rvalue 3.3/lvalue_rvalue.cpp)
+
+add_executable(3.3.move_semantics
+        3.3/move_semantics.cpp)
+
+add_executable(3.3.perfect_forwarding
+        3.3/perfect_forwarding.cpp)

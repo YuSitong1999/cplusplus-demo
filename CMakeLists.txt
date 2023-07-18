@@ -124,3 +124,30 @@ add_executable(7.3.future
 
 add_executable(7.4.condition_variable
         7.4/condition_variable.cpp)
+
+add_executable(7.5.no_atomic_bug
+        7.5/no_atomic_bug.cpp)
+
+# C++ 标准库通常不需要额外的链接步骤，因为编译器会自动处理。然而，有些情况下，某些特性可能需要特定的库支持，例如多线程和原子操作。这种情况下，需要链接到相应的库（比如 -lpthread 或 -latomic）。
+# 一般来说，需要额外链接的库主要集中在以下几个方面：
+# 并发和多线程：例如 <thread>, <mutex>, <condition_variable>, <future>, <atomic> 等头文件可能需要 -lpthread 或 -latomic。
+# 数学库：例如 <complex> 或 <valarray> 等头文件可能需要 -lm。
+# 文件系统库：例如 <filesystem> 头文件可能需要 -lstdc++fs（在旧的 GCC 版本中）。
+# 上述库是否需要额外链接，很大程度上取决于你的编译器和它的版本。新版本的 GCC 和 Clang 通常可以自动处理这些库。如果你在链接时遇到问题，你应该检查你的编译器和它的文档，看看是否需要链接到这些库。
+
+add_executable(7.5.atomic
+        7.5/atomic.cpp)
+
+target_link_libraries(7.5.atomic atomic)
+
+add_executable(7.5.1.memory_order_relaxed
+        7.5/1.memory_order_relaxed.cpp)
+
+add_executable(7.5.2.memory_order_release_consume
+        7.5/2.memory_order_release_consume.cpp)
+
+add_executable(7.5.3.memory_order_release_acquire
+        7.5/3.memory_order_release_acquire.cpp)
+
+add_executable(7.5.4.memory_order_seq_cst
+        7.5/4.memory_order_seq_cst.cpp)

@@ -121,3 +121,6 @@ add_executable(7.2.mutex_unique_lock
 
 add_executable(7.3.future
         7.3/future.cpp)
+
+add_executable(7.4.condition_variable
+        7.4/condition_variable.cpp)

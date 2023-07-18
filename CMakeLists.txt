@@ -112,3 +112,9 @@ add_executable(6.2.regex
 
 add_executable(7.1.thread
         7.1/thread.cpp)
+
+add_executable(7.2.mutex_lock_guard
+        7.2/mutex_lock_guard.cpp)
+
+add_executable(7.2.mutex_unique_lock
+        7.2/mutex_unique_lock.cpp)

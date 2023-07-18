@@ -1,0 +1,37 @@
+//
+// Created by root on 23-7-18.
+//
+
+#include <iostream>
+#include <mutex>
+#include <thread>
+
+int v = 1;
+
+void critical_section(int change_v) {
+    static std::mutex mtx;
+    std::unique_lock<std::mutex> lock(mtx);
+    // 执行竞争操作
+    v = change_v;
+    std::cout << "set v: " << v << std::endl;
+    // sleep 3s
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    // 将锁进行释放
+    lock.unlock();
+
+    // 在此期间，任何人都可以抢夺 v 的持有权
+
+    // 开始另一组竞争操作，再次加锁
+    lock.lock();
+    v += 1;
+    std::cout << "plus v: " << v << std::endl;
+    // sleep 3s
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+}
+
+int main() {
+    std::thread t1(critical_section, 2), t2(critical_section, 3);
+    t1.join();
+    t2.join();
+    return 0;
+}

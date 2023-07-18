@@ -3,6 +3,9 @@ project(cplusplus_demo)
 
 set(CMAKE_CXX_STANDARD 20)
 
+# 最高优化级别
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+
 add_executable(2.1.nullptr
         2.1/nullptr.cpp)
 
@@ -106,3 +109,6 @@ add_executable(5.4.weak_ptr
 
 add_executable(6.2.regex
         6.2/regex.cpp 6.2/regex.cpp)
+
+add_executable(7.1.thread
+        7.1/thread.cpp)

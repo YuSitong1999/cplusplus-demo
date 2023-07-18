@@ -82,3 +82,9 @@ add_executable(3.3.move_semantics
 
 add_executable(3.3.perfect_forwarding
         3.3/perfect_forwarding.cpp)
+
+add_executable(4.1.array
+        4.1/array.cpp)
+
+add_executable(4.1.forward_list
+        4.1/forward_list.cpp 4.1/forward_list.cpp)

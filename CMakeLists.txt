@@ -88,3 +88,6 @@ add_executable(4.1.array
 
 add_executable(4.1.forward_list
         4.1/forward_list.cpp 4.1/forward_list.cpp)
+
+add_executable(4.2.unordered_map
+        4.2/unordered_map.cpp)

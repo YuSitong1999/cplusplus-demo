@@ -163,3 +163,6 @@ add_executable(9.3.literal
 
 add_executable(9.4.alignas_alignof
         9.4/alignas_alignof.cpp)
+
+add_executable(10.1.concept
+        10.1/concept.cpp)

@@ -97,3 +97,9 @@ add_executable(4.3.tuple
 
 add_executable(5.2.shared_ptr
         5.2/shared_ptr.cpp)
+
+add_executable(5.3.unique_ptr
+        5.3/unique_ptr.cpp)
+
+add_executable(5.4.weak_ptr
+        5.4/weak_ptr.cpp)

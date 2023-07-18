@@ -103,3 +103,6 @@ add_executable(5.3.unique_ptr
 
 add_executable(5.4.weak_ptr
         5.4/weak_ptr.cpp)
+
+add_executable(6.2.regex
+        6.2/regex.cpp 6.2/regex.cpp)

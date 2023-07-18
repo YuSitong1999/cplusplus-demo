@@ -151,3 +151,15 @@ add_executable(7.5.3.memory_order_release_acquire
 
 add_executable(7.5.4.memory_order_seq_cst
         7.5/4.memory_order_seq_cst.cpp)
+
+add_executable(9.1.long_long_int
+        9.1/long_long_int.cpp)
+
+add_executable(9.2.noexcept
+        9.2/noexcept.cpp)
+
+add_executable(9.3.literal
+        9.3/literal.cpp)
+
+add_executable(9.4.alignas_alignof
+        9.4/alignas_alignof.cpp)

@@ -94,3 +94,6 @@ add_executable(4.2.unordered_map
 
 add_executable(4.3.tuple
         4.3/tuple.cpp 4.3/tuple.cpp)
+
+add_executable(5.2.shared_ptr
+        5.2/shared_ptr.cpp)

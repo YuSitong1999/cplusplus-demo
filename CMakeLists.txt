@@ -91,3 +91,6 @@ add_executable(4.1.forward_list
 
 add_executable(4.2.unordered_map
         4.2/unordered_map.cpp)
+
+add_executable(4.3.tuple
+        4.3/tuple.cpp 4.3/tuple.cpp)

@@ -118,3 +118,6 @@ add_executable(7.2.mutex_lock_guard
 
 add_executable(7.2.mutex_unique_lock
         7.2/mutex_unique_lock.cpp)
+
+add_executable(7.3.future
+        7.3/future.cpp)
